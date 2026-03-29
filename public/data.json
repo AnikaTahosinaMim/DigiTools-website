@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Resume Builder",
+    "description": "Create simple professional resumes quickly.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["20+ templates", "Basic ATS optimization", "Export to PDF"],
+    "icons": "/assets/products/banner.png",
+    "icon": "https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-resume-icon-png-image_4187299.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder for professionals.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "Advanced ATS optimization",
+      "Export to PDF & DOCX",
+      "Cover letter builder"
+    ],
+    "icon": "star"
+  },
+  {
+    "id": 3,
+    "name": "Career Starter Pack",
+    "description": "Perfect for students and fresh graduates.",
+    "price": 19,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "features": ["50+ templates", "Resume scoring", "LinkedIn profile tips"],
+    "icon": "User"
+  },
+  {
+    "id": 4,
+    "name": "Job Hunter Toolkit",
+    "description": "Tools to boost your job search.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Job tracking dashboard",
+      "Interview preparation tips",
+      "Resume analytics"
+    ],
+    "icon": "Briefcase"
+  },
+  {
+    "id": 5,
+    "name": "Portfolio Builder",
+    "description": "Create a professional portfolio website.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Custom portfolio templates",
+      "Drag & drop editor",
+      "SEO optimization"
+    ],
+    "icon": "Globe"
+  },
+  {
+    "id": 6,
+    "name": "Ultimate Career Kit",
+    "description": "All-in-one career development package.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "features": [
+      "Unlimited resume downloads",
+      "Cover letter generator",
+      "Portfolio builder",
+      "Career coaching resources"
+    ],
+    "icon": "Award"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Resume Pack",
+    "description": "Optimized resumes for freelancers.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Freelancer-friendly templates",
+      "Client project sections",
+      "PDF export"
+    ],
+    "icon": "Laptop"
+  },
+  {
+    "id": 8,
+    "name": "Executive Resume Suite",
+    "description": "Premium resumes for senior professionals.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best-seller",
+    "features": [
+      "Executive templates",
+      "Personal branding tips",
+      "LinkedIn profile optimization"
+    ],
+    "icon": "Crown"
+  }
+]
