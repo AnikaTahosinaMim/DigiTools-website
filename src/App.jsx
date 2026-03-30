@@ -4,6 +4,7 @@ import Navbar from "./componets/Navbar";
 import CartSection from "./componets/CartSection";
 import Products from "./componets/Products";
 import Banner from "./componets/Banner";
+import GetStart from "./componets/GetStart";
 
 const jsondata = async () => {
   const res = await fetch("/data.json");
@@ -50,12 +51,15 @@ function App() {
           />
         </div>
       </div>
+
       {productCart === "Products" ? (
         <Products datas={datas} carts={carts} setCarts={setCarts}></Products>
       ) : null}
       {productCart === "Carts" ? (
         <CartSection carts={carts} setCarts={setCarts}></CartSection>
       ) : null}
+
+      <GetStart></GetStart>
     </>
   );
 }

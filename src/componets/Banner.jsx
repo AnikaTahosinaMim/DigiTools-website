@@ -1,5 +1,8 @@
 import React from "react";
+import { FaStroopwafel } from "react-icons/fa";
 import { IoTriangleSharp } from "react-icons/io5";
+import { LiaBugSolid } from "react-icons/lia";
+import banner from "../assets/banner.png"
 
 const Banner = () => {
   return (
@@ -9,8 +12,8 @@ const Banner = () => {
         <div className="flex-row md:flex items-center justify-between">
           <div>
             <div className="flex  items-center">
-              <span className="px-2 py-1 bg-[#E1E7FF] rounded-full ">
-                <img src="/assets/Ractangle 3.png" alt="" />
+              <span className="px-2 py-1 flex items-center gap-2 bg-[#E1E7FF] rounded-full ">
+                <LiaBugSolid className=" text-[#4F39F6]"></LiaBugSolid>
                 <p className="bg-gradient-to-r from-[#4F39F6]  to-[#9514FA] text-transparent bg-clip-text">
                   New: AI-Powered Tools Available
                 </p>
@@ -37,7 +40,7 @@ const Banner = () => {
             </div>
           </div>
           <div>
-            <img src="/public/assets/banner.png" alt="" />
+            <img src={banner} alt="" />
           </div>
         </div>
       </div>
