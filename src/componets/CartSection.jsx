@@ -1,14 +1,18 @@
 import React from "react";
 import CartMapSection from "./CartMapSection";
+import { toast } from "react-toastify";
+import shoPing from "../assets/products/shopping-cart.png"
 
 const CartSection = ({ carts, setCarts }) => {
   const totalprice = carts.reduce((sum, c) => sum + c.price, 0);
   const handleDelete = (c) => {
+    toast("Delete");
     console.log("jvnefu");
     const deleteBtn = carts.filter((d) => d.id !== c.id);
     setCarts(deleteBtn);
   };
   const procced = () => {
+    toast("Add to carts");
     setCarts([]);
   };
 
@@ -19,8 +23,8 @@ const CartSection = ({ carts, setCarts }) => {
         <div className=" ">
           <div className="space-y-4">
             {carts.length === 0 ? (
-              <div className="text-center">
-                <img src="" alt="" />
+              <div className="text-center justify-center">
+                <img className="mx-auto h-20 w-20 object-cover" src={shoPing} alt="" />
                 <h2>Your Carts is empty</h2>
               </div>
             ) : (

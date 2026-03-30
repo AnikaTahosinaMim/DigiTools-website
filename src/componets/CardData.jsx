@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const CardData = ({ item, carts, setCarts }) => {
   const [buyNow, setBuyNow] = useState(false);
   const isHere = carts.find((menu) => menu.id === item.id);
   const handleBuy = () => {
     if (isHere) {
+      toast.error("Already added");
       return;
     }
+    toast.success("Buy successfully");
+
     setBuyNow(true);
+
     setCarts([...carts, item]);
   };
   console.log(buyNow);
