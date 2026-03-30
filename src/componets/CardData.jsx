@@ -3,8 +3,8 @@ import { FaCheck } from "react-icons/fa";
 
 const CardData = ({ item, carts, setCarts }) => {
   const [buyNow, setBuyNow] = useState(false);
-  const handleBuy = (item) => {
-    const isHere = carts.find((menu) => menu.id === item.id);
+  const isHere = carts.find((menu) => menu.id === item.id);
+  const handleBuy = () => {
     if (isHere) {
       return;
     }
@@ -43,10 +43,12 @@ const CardData = ({ item, carts, setCarts }) => {
             ))}
           </div>
           <button
-            onClick={() => handleBuy(item)}
-            className={`${buyNow ? "btn btn-success w-full mt-2 rounded-full" : "btn btn-primary w-full mt-2 rounded-full"}`}
+            onClick={handleBuy}
+            className={`w-full mt-2 rounded-full ${
+              isHere ? "btn btn-success" : "btn btn-primary"
+            }`}
           >
-            {buyNow ? "Add to cart" : "Buy now"}
+            {isHere ? "Added to cart" : "Buy now"}
           </button>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import CartMapSection from "./CartMapSection";
 
 const CartSection = ({ carts, setCarts }) => {
   const totalprice = carts.reduce((sum, c) => sum + c.price, 0);
@@ -13,37 +14,24 @@ const CartSection = ({ carts, setCarts }) => {
 
   return (
     <div className="container mx-auto">
-      <h2 className="text-2xl font-semibold">Your Carts</h2>
-      <div className="space-y-4 ">
-        {carts.map((c) => (
-          <div className="flex items-center justify-between gap-4 rounded-lg p-3 bg-gray-100">
-            <div className="flex items-center gap-4">
-              <div className="w-10 h-10">
-                <img className="rounded-full p-1 border" src={c.icon} alt="" />
-              </div>
+      <div className="shadow-2xl rounded-lg p-8">
+        <h2 className="text-2xl font-semibold p-8">Your Carts</h2>
+        <div className=" ">
+          <div className="space-y-4">
+            {carts.length === 0 ? (
               <div>
-                <h2>{c.name}</h2>
-                <p>${c.price}</p>
+                <img src="" alt="" />
+                <h2>Your Carts is empty</h2>
               </div>
-            </div>
-            <div className="flex  items-center">
-              <button
-                onClick={() => handleDelete(c)}
-                className="btn btn-ghost text-red-500"
-              >
-                Remove
-              </button>
-            </div>
+            ) : (
+              <CartMapSection
+                carts={carts}
+                procced={procced}
+                handleDelete={handleDelete}
+                totalprice={totalprice}
+              />
+            )}
           </div>
-        ))}
-        <div className="flex justify-between font-bold text-xl">
-          <p>Total :</p>
-          <p>${totalprice}</p>
-        </div>
-        <div>
-          <button onClick={procced} className="btn btn-primary w-full">
-            Proceed to Checkout
-          </button>
         </div>
       </div>
     </div>

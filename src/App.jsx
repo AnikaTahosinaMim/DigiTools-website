@@ -19,9 +19,9 @@ function App() {
   return (
     <>
       <h2 className="text-2xl font-bold">Name</h2>
-      <Navbar carts={carts} setCarts={setCarts}></Navbar>
+      <Navbar carts={carts} ></Navbar>
       <div>
-        <div className="tabs tabs-box w-43 rounded-full mx-auto justify-center items-center bg-transparent ">
+        <div className="tabs tabs-box w-43 my-8 rounded-full mx-auto justify-center items-center bg-transparent ">
           <input
             type="radio"
             name="my_tabs_6"
