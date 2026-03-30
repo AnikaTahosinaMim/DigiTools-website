@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import { FaCheck } from "react-icons/fa";
 
-const CardData = ({ item }) => {
+const CardData = ({ item, carts, setCarts }) => {
   const [buyNow, setBuyNow] = useState(false);
+  const handleBuy = (item) => {
+    const isHere = carts.find((menu) => menu.id === item.id);
+    if (isHere) {
+      return;
+    }
+    setBuyNow(true);
+    setCarts([...carts, item]);
+  };
   console.log(buyNow);
   return (
     <div>
@@ -35,7 +43,7 @@ const CardData = ({ item }) => {
             ))}
           </div>
           <button
-            onClick={() => setBuyNow(true)}
+            onClick={() => handleBuy(item)}
             className={`${buyNow ? "btn btn-success w-full mt-2 rounded-full" : "btn btn-primary w-full mt-2 rounded-full"}`}
           >
             {buyNow ? "Add to cart" : "Buy now"}

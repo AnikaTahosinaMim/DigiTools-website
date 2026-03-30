@@ -12,11 +12,14 @@ const datas = jsondata();
 console.log(datas);
 
 function App() {
+  // for products usestate
   const [productCart, setProductCart] = useState("Products");
+  // for carts usustate:
+  const [carts, setCarts] = useState([]);
   return (
     <>
       <h2 className="text-2xl font-bold">Name</h2>
-      <Navbar></Navbar>
+      <Navbar carts={carts} setCarts={setCarts}></Navbar>
       <div>
         <div className="tabs tabs-box w-43 rounded-full mx-auto justify-center items-center bg-transparent ">
           <input
@@ -33,14 +36,16 @@ function App() {
             name="my_tabs_6"
             onClick={() => setProductCart("Carts")}
             className={`tab ${productCart === "Carts" ? "bg-gradient-to-r from-[#4F39F6]  to-[#9514FA]" : ""}`}
-            aria-label="Carts"
+            aria-label={`Carts (${carts.length})`}
           />
         </div>
       </div>
-      {productCart === "Products" ? <Products datas={datas}></Products> : null}
-      {productCart === "Carts" ? <h2>Carts sections</h2> : null}
-
-      <CartSection></CartSection>
+      {productCart === "Products" ? (
+        <Products datas={datas} carts={carts} setCarts={setCarts}></Products>
+      ) : null}
+      {productCart === "Carts" ? (
+        <CartSection carts={carts} setCarts={setCarts}></CartSection>
+      ) : null}
     </>
   );
 }

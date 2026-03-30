@@ -1,7 +1,7 @@
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 
-const Navbar = () => {
+const Navbar = ({ carts, setCarts }) => {
   return (
     <div>
       <div className="flex  justify-between shadow-sm p-4">
@@ -28,9 +28,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center gap-3">
-          <p>
+          <div className="relative">
             <CiShoppingCart></CiShoppingCart>
-          </p>
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-1.5 rounded-full">
+              {carts.length}
+            </span>
+          </div>
           <p className="font-semibold">Login</p>
           <button className="text-sm font-bold bg-gradient-to-r from-[#4F39F6]  to-[#9514FA] rounded-full px-4 py-2 text-white">
             Get Started
