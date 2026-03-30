@@ -25,7 +25,7 @@
       "Export to PDF & DOCX",
       "Cover letter builder"
     ],
-    "icon": "star"
+    "icon": "https://i.ibb.co.com/N2nvW1Yn/design-tool.png"
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
     "tag": "best seller",
     "tagType": "best-seller",
     "features": ["50+ templates", "Resume scoring", "LinkedIn profile tips"],
-    "icon": "User"
+    "icon": "https://i.ibb.co.com/pBYXh8fc/operation.png"
   },
   {
     "id": 4,
@@ -51,7 +51,7 @@
       "Interview preparation tips",
       "Resume analytics"
     ],
-    "icon": "Briefcase"
+    "icon": "https://i.ibb.co.com/fz73YtRY/social-media.png"
   },
   {
     "id": 5,
@@ -66,7 +66,7 @@
       "Drag & drop editor",
       "SEO optimization"
     ],
-    "icon": "Globe"
+    "icon": "https://i.ibb.co.com/gbsCsbnb/portfolio.png"
   },
   {
     "id": 6,
@@ -82,7 +82,7 @@
       "Portfolio builder",
       "Career coaching resources"
     ],
-    "icon": "Award"
+    "icon": "https://i.ibb.co.com/fz73YtRY/social-media.png"
   },
   {
     "id": 7,
@@ -97,7 +97,7 @@
       "Client project sections",
       "PDF export"
     ],
-    "icon": "Laptop"
+    "icon": "https://i.ibb.co.com/fz73YtRY/social-media.png"
   },
   {
     "id": 8,
@@ -112,6 +112,6 @@
       "Personal branding tips",
       "LinkedIn profile optimization"
     ],
-    "icon": "Crown"
+    "icon": "https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-resume-icon-png-image_4187299.jpg"
   }
 ]

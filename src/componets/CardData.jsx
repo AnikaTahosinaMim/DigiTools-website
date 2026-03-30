@@ -21,7 +21,11 @@ const CardData = ({ item, carts, setCarts }) => {
           </button>
         </div>
         <div className="w-10 h-10 ">
-          <img className="rounded-full p-1 border " src={item.icon} alt="" />
+          <img
+            className="rounded-full p-1 border border-zinc-300"
+            src={item.icon}
+            alt=""
+          />
         </div>
         <div className="space-y-2">
           <h2 className="font-bold text-2xl">{item.name}</h2>

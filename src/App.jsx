@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./componets/Navbar";
 import CartSection from "./componets/CartSection";
 import Products from "./componets/Products";
+import Banner from "./componets/Banner";
 
 const jsondata = async () => {
   const res = await fetch("/data.json");
@@ -18,8 +19,17 @@ function App() {
   const [carts, setCarts] = useState([]);
   return (
     <>
-      <h2 className="text-2xl font-bold">Name</h2>
-      <Navbar carts={carts} ></Navbar>
+      <Navbar carts={carts}></Navbar>
+      <Banner></Banner>
+      <div className="text-center justify-center mt-8">
+        <h2 className="text-4xl font-bold">Premium Digital Tools</h2>
+        <p className="text-[#627382]">
+          Choose from our curated collection of premium digital products
+          designed <br /> to boost your productivity and creativity.
+        </p>
+      </div>
+      {/* banner section;;; */}
+
       <div>
         <div className="tabs tabs-box w-43 my-8 rounded-full mx-auto justify-center items-center bg-transparent ">
           <input
