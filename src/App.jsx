@@ -5,6 +5,8 @@ import CartSection from "./componets/CartSection";
 import Products from "./componets/Products";
 import Banner from "./componets/Banner";
 import GetStart from "./componets/GetStart";
+import Transparent from "./componets/Transparent";
+import WorkFlow from "./componets/WorkFlow";
 
 const jsondata = async () => {
   const res = await fetch("/data.json");
@@ -60,6 +62,8 @@ function App() {
       ) : null}
 
       <GetStart></GetStart>
+      <Transparent></Transparent>
+      <WorkFlow></WorkFlow>
     </>
   );
 }

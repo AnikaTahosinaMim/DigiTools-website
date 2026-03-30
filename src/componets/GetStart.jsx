@@ -1,14 +1,13 @@
 import React from "react";
 import userImg from "../assets/user.png";
-import pacKage  from "../assets/package.png"
+import pacKage from "../assets/package.png";
 
 import rocket from "../assets/user.png";
 
-
 const GetStart = () => {
   return (
-    <div>
-      <div className="bg-zinc-100 p-6 my-10">
+    <div className="bg-zinc-100 ">
+      <div className="py-10 my-10">
         <div className="text-center my-8">
           <h1 className="font-bold text-4xl ">Get Started in 3 Steps</h1>
           <p className="text-[#627382] font-medium">
@@ -16,7 +15,7 @@ const GetStart = () => {
           </p>
         </div>
         {/* card */}
-        <div className="flex justify-evenly">
+        <div className="flex-row md:flex pb-10 justify-evenly">
           <div className="bg-white shadow-lg  p-5 space-y-2 rounded-lg text-center items-center justify-center">
             <div className="flex justify-end">
               <p className="bg-[#4F39F6] px-2 py-1 rounded-full ">01</p>
@@ -71,6 +70,8 @@ const GetStart = () => {
         </div>
       </div>
     </div>
+
+    
   );
 };
 
