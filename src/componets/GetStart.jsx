@@ -15,8 +15,8 @@ const GetStart = () => {
           </p>
         </div>
         {/* card */}
-        <div className="flex-row md:flex pb-10 justify-evenly">
-          <div className="bg-white shadow-lg  p-5 space-y-2 rounded-lg text-center items-center justify-center">
+        <div className="flex-row md:flex my-5 md:my-0 pb-10 justify-evenly">
+          <div className="bg-white shadow-lg  my-5 md:my-0 p-5 space-y-2 rounded-lg text-center items-center justify-center">
             <div className="flex justify-end">
               <p className="bg-[#4F39F6] px-2 py-1 rounded-full ">01</p>
             </div>
@@ -33,8 +33,8 @@ const GetStart = () => {
               started.
             </p>
           </div>
-          <div className="bg-white shadow-lg  p-5 space-y-2 rounded-lg text-center items-center justify-center">
-            <div className="flex justify-end">
+          <div className="bg-white shadow-lg  my-5 md:my-0 p-5 space-y-2 rounded-lg text-center items-center justify-center">
+            <div className="flex justify-end  my-5 md:my-0">
               <p className="bg-[#4F39F6] px-2 py-1 rounded-full ">01</p>
             </div>
             <div className="">
@@ -70,8 +70,6 @@ const GetStart = () => {
         </div>
       </div>
     </div>
-
-    
   );
 };
 

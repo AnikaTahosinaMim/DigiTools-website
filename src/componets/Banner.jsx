@@ -20,7 +20,7 @@ const Banner = () => {
               </span>
             </div>
             <div className="space-y-3">
-              <h1 className="text-[62px] font-extrabold">
+              <h1 className="text-2xl md:text-[62px] font-extrabold">
                 Supercharge Your <br /> Digital Workflow
               </h1>
               <p className="text-[#627382]">
@@ -40,7 +40,7 @@ const Banner = () => {
             </div>
           </div>
           <div>
-            <img src={banner} alt="" />
+            <img className="my-5 md:my-0" src={banner} alt="" />
           </div>
         </div>
       </div>
