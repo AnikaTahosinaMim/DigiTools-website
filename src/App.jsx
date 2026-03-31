@@ -7,6 +7,7 @@ import Banner from "./componets/Banner";
 import GetStart from "./componets/GetStart";
 import Transparent from "./componets/Transparent";
 import WorkFlow from "./componets/WorkFlow";
+import Footer from "./componets/Footer";
 
 const jsondata = async () => {
   const res = await fetch("/data.json");
@@ -64,6 +65,7 @@ function App() {
       <GetStart></GetStart>
       <Transparent></Transparent>
       <WorkFlow></WorkFlow>
+      <Footer></Footer>
     </>
   );
 }
