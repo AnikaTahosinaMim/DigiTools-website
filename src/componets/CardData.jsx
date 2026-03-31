@@ -21,7 +21,15 @@ const CardData = ({ item, carts, setCarts }) => {
     <div>
       <div className="border space-y-2 border-zinc-200 shadow-lg rounded-lg p-3">
         <div className="flex justify-end">
-          <button className=" px-2 py-1 rounded-full bg-amber-200">
+          <button
+            className={`${
+              item.tag === "best seller"
+                ? "bg-purple-300 rounded-full px-2  text-purple-600"
+                : item.tag === "new"
+                  ? "bg-green-300 rounded-full px-2 text-green-600"
+                  : "bg-amber-200 rounded-full px-2  text-amber-600"
+            }`}
+          >
             {item.tag}
           </button>
         </div>
