@@ -24,7 +24,7 @@ const CartSection = ({ carts, setCarts }) => {
           <div className="space-y-4">
             {carts.length === 0 ? (
               <div className="text-center justify-center">
-                <img className="mx-auto h-20 w-20 object-cover" src={shoPing} alt="" />
+                <img className="mx-auto" src={shoPing} alt="" />
                 <h2>Your Carts is empty</h2>
               </div>
             ) : (

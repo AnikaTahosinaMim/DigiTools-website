@@ -65,7 +65,7 @@ const CardData = ({ item, carts, setCarts }) => {
               isHere ? "btn btn-success" : "btn btn-primary"
             }`}
           >
-            {isHere ? "Added to cart" : "Buy now"}
+            {isHere ? (<span className="flex gap-1 items-center"><FaCheck></FaCheck>Added to cart</span>) : "Buy now"}
           </button>
         </div>
       </div>

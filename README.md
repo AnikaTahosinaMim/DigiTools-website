@@ -12,8 +12,8 @@ Digitools Platform is a web application where users can explore and use differen
 
 ## ✨ Features
 
-🛒 Add to cart system
-❌ Remove tools from cart
-💰 Dynamic price calculation
-🏷️ Tag system (new, popular, best seller)
-⚡ Fast & responsive UI
+- 🛒 Add to cart system
+- ❌ Remove tools from cart
+- 💰 Dynamic price calculation
+- 🏷️ Tag system (new, popular, best seller)
+- ⚡ Fast & responsive UI

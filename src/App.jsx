@@ -40,7 +40,7 @@ function App() {
             type="radio"
             name="my_tabs_6"
             onClick={() => setProductCart("Products")}
-            className={`tab ${productCart === "Products" ? "bg-gradient-to-r from-[#4F39F6]  to-[#9514FA]" : ""}`}
+            className={`tab rounded-full ${productCart === "Products" ? "bg-gradient-to-r from-[#4F39F6]  to-[#9514FA]" : ""}`}
             aria-label="Products"
             defaultChecked
           />
@@ -49,7 +49,7 @@ function App() {
             type="radio"
             name="my_tabs_6"
             onClick={() => setProductCart("Carts")}
-            className={`tab ${productCart === "Carts" ? "bg-gradient-to-r from-[#4F39F6]  to-[#9514FA]" : ""}`}
+            className={`tab rounded-full ${productCart === "Carts" ? "bg-gradient-to-r from-[#4F39F6]  to-[#9514FA]" : ""}`}
             aria-label={`Carts (${carts.length})`}
           />
         </div>

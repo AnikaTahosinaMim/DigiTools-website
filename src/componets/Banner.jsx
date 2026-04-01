@@ -2,7 +2,7 @@ import React from "react";
 import { FaStroopwafel } from "react-icons/fa";
 import { IoTriangleSharp } from "react-icons/io5";
 import { LiaBugSolid } from "react-icons/lia";
-import banner from "../assets/banner.png"
+import banner from "../assets/banner.png";
 
 const Banner = () => {
   return (
@@ -54,12 +54,15 @@ const Banner = () => {
               Active Users
             </p>
           </div>
+          <div className="h-0 md:h-16 items-center flex md:w-[1px] bg-white/50"></div>
+
           <div>
             <h1 className="text-4xl font-bold text-white">200+</h1>
             <p className="text-[#FFFFFF] font-medium text-[24px]">
               Premium Tools
             </p>
           </div>
+          <div className="h-0 md:h-16 items-center flex md:w-[1px] bg-white/50"></div>
           <div>
             <h1 className="text-4xl font-bold text-white">4.9</h1>
             <p className="text-[#FFFFFF] font-medium text-[24px]">Rating</p>
