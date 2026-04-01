@@ -9,7 +9,7 @@ const Navbar = ({ carts }) => {
           DigiTools
         </h1>
         <div className="flex gap-3 list-none">
-          <ul className="flex gap-3 font-semibold">
+          <ul className="flex-2 md:flex gap-3 font-semibold">
             <li>
               <a href="">Products</a>
             </li>
