@@ -23,10 +23,11 @@ const Banner = () => {
               <h1 className="text-2xl md:text-[62px] font-extrabold">
                 Supercharge Your <br /> Digital Workflow
               </h1>
-              <p className="text-[#627382]">
-                Access premium AI tools, design assets, templates, and
-                productivity <br /> software—all in one place. Start creating
-                faster today. <br /> Explore Products
+              <p className="text-[#627382] text-center md:text-start">
+                Access premium AI tools, design assets, templates <br />, and 
+                productivity software—all in one place. <br /> Start creating
+                
+                faster today. Explore Products
               </p>
               <div className="flex items-center gap-3">
                 <button className="px-4 font-bold text-white py-2 rounded-full bg-gradient-to-r from-[#4F39F6]  to-[#9514FA]">
